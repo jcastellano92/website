@@ -1,12 +1,13 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import { Home } from './Components/Home'
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { Home } from './Pages'
+import '@fontsource/roboto';
 
 function App() {
   return (
     <div className="App">
       <Router basename={process.env.PUBLIC_URL}>
         <Switch>
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
         </Switch>
       </Router>
     </div>
