@@ -6,15 +6,15 @@ export const CustomTheme = createMuiTheme({
   palette: {
     primary: {
       dark: Colors.Common.White,
-      main: Colors.Common.White,
+      main: "#A8BFFF",
       light: Colors.Common.White,
       contrastText: Colors.Common.White
     },
     secondary: {
-      dark: Colors.Common.Black,
-      main: Colors.Common.Black,
-      light: Colors.Common.Black,
-      contrastText: Colors.Common.Black
+      dark: Colors.Common.White,
+      main: Colors.Common.White,
+      light: Colors.Common.White,
+      contrastText: Colors.Common.White
     },
     grey: {
       50: Colors.Grey.MidGrey,
@@ -35,14 +35,5 @@ export const CustomTheme = createMuiTheme({
     shape: {
       borderRadius: 7,
     },
-    overrides: {
-      MuiCssBasekube: {
-        '@global': {
-          body: {
-            backgroundColor: '#F1F1F1'
-          }
-        }
-      }
-    }
   }
 })

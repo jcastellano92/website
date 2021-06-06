@@ -1,1 +1,6 @@
 export * from './homeData'
+export * from './engineerData'
+export * from './designerData'
+export * from './wizardData'
+export * from './resumeData'
+export * from './contactData'
