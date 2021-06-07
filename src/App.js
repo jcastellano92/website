@@ -5,14 +5,14 @@ import '@fontsource/roboto';
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/Engineer" component={Engineer} />
-          <Route exact path="/Designer" component={Designer} />
-          <Route exact path="/Wizard" component={Home} />
-          <Route exact path="/Resume" component={Home} />
-          <Route exact path="/Contact" component={Home} />
+          <Route path="/Engineer"><Engineer/></Route>
+          <Route path="/Designer" component={Designer} />
+          <Route path="/Wizard" component={Home} />
+          <Route path="/Resume" component={Home} />
+          <Route path="/Contact" component={Home} />
         </Switch>
       </Router>
     </div>
